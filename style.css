@@ -1,0 +1,89 @@
+body {
+        background-image: url(1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+        font-family: var(--font-style);
+}
+.login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: #3e3045;
+        box-shadow: 0 15px 25px rgba(228, 228, 228, 0.5);
+        border-radius: 10px;
+    }
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+    .login-box .user-box input {
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+    .login-box .user-box label {
+        position: relative;
+        left: 0;
+        top: -60px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+        top: -85px;
+        left: 170px;
+        color: #ecc57c;
+        font-size: 12px;
+    }
+    #submit {
+        padding: 10px 20px;
+        color: #dbd1bd;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        letter-spacing: 4px;
+        border: 1px solid #e9a916;
+        margin: auto;
+    }
+    #submit:hover {
+        background: #e9a916;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #e9a916, 0 0 25px #e9a916, 0 0 50px #e9a916, 0 0 100px #e9a916;
+    }
+    .button-form {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    #register {
+        font-size: 14px;
+        text-decoration: none;
+        color: #dbd1bd;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+    #register a {
+        margin: auto;
+        color: #e9a916;
+        text-decoration: none;
+    }

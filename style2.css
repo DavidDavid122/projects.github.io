@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One',cursive;
+}
+body {
+    background: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+ul {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+ul li {
+    width: 100%;
+    position: relative;
+    list-style: none;
+}
+li {
+    width: 100%;
+    font-size: 100%;
+}
+ul li a {
+    width: 100%;
+    position: relative;
+    font-size: 180%;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(225, 225, 225, 0.5);
+}
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    width: 0;
+    overflow: hidden;
+    transition: 2s;
+    -webkit-text-stroke: 2.5px var(--clr);
+}
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px white);
+}
+
+.const {
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: -450px;
+    background: #000;
+    opacity: 0.5;
+    color: white;
+}
+.const:hover {
+    opacity: 1;
+}
